@@ -133,7 +133,7 @@ janela = Tk()
 
 #Janela
 
-janela.geometry('600x250')
+janela.geometry('350x350')
 janela.configure(background='#483D8B')
 
 #TÍTULO

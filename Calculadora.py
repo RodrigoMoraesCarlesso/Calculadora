@@ -142,64 +142,64 @@ janela.title('Calculadora')
 
 #VISOR
 
-visoreq = Label(janela, text='', width=20, borderwidth=4, bg='#00CED1', font=('Verdana', 15), justify=CENTER)
-visoreq.grid(column=4, row=0)
+visoreq = Label(janela, text='', width=24, borderwidth=4, bg='#00CED1', font=('Verdana', 15))
+visoreq.grid(column=0, row=0, columnspan=4)
 
-visor = Label(janela, text='', width=20, borderwidth=4, bg='#00CED1', font=('Verdana', 15), justify=CENTER)
-visor.grid(column=4, row=1)
+visor = Label(janela, text='', width=24, borderwidth=4, bg='#00CED1', font=('Verdana', 15))
+visor.grid(column=0, row=1, columnspan=4)
 
 #BOTÕES
 
 button1 = but(1, n1)
-button1.grid(column=0, row=2)
+button1.grid(column=0, row=4)
 
 button2 = but(2, n2)
-button2.grid(column=1, row=2)
+button2.grid(column=1, row=4)
 
 button3 = but(3, n3)
-button3.grid(column=2, row=2)
+button3.grid(column=2, row=4)
 
 button4 = but(4, n4)
-button4.grid(column=0, row=1)
+button4.grid(column=0, row=3)
 
 button5 = but(5,n5)
-button5.grid(column=1, row=1)
+button5.grid(column=1, row=3)
 
 button6 = but(6, n6)
-button6.grid(column=2, row=1)
+button6.grid(column=2, row=3)
 
 button7 = but(7, n7)
-button7.grid(column=0, row=0)
+button7.grid(column=0, row=2)
 
 button8 = but(8, n8)
-button8.grid(column=1, row=0)
+button8.grid(column=1, row=2)
 
 button9 = but(9, n9)
-button9.grid(column=2, row=0)
+button9.grid(column=2, row=2)
 
 button0 = Button(janela, text='0', command=n0, width=11, borderwidth=4, bg='#00CED1', font=('Verdana', 15), justify=CENTER)
-button0.grid(column=0, row=3, columnspan=2)
+button0.grid(column=0, row=5, columnspan=2)
 
 buttonp = but('=', prod)
-buttonp.grid(column=3, row=4)
+buttonp.grid(column=3, row=6)
 
 buttonc = Button(janela, text='C', command=limpar, width=17, borderwidth=4, bg='#00CED1', font=('Verdana', 15), justify=CENTER)
-buttonc.grid(column=0, row=4, columnspan=3)
+buttonc.grid(column=0, row=6, columnspan=3)
 
 buttonvirg = but('.', nvirg)
-buttonvirg.grid(column=2, row=3)
+buttonvirg.grid(column=2, row=5)
 
 buttonmais = but('+', mais)
-buttonmais.grid(column=3, row=3)
+buttonmais.grid(column=3, row=5)
 
 buttonmenos = but('-', menos)
-buttonmenos.grid(column=3, row=2)
+buttonmenos.grid(column=3, row=4)
 
 buttondiv = but('/', div)
-buttondiv.grid(column=3, row=0)
+buttondiv.grid(column=3, row=2)
 
 buttonmult = but('X', mult)
-buttonmult.grid(column=3, row=1)
+buttonmult.grid(column=3, row=3)
 
 #FIM
 

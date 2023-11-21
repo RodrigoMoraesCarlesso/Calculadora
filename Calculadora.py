@@ -177,14 +177,14 @@ button8.grid(column=1, row=0)
 button9 = but(9, n9)
 button9.grid(column=2, row=0)
 
-button0 = but(0, n0)
-button0.grid(column=1, row=3)
+button0 = Button(janela, text='0', command=n0, width=11, borderwidth=4, bg='#00CED1', font=('Verdana', 15), justify=CENTER)
+button0.grid(column=0, row=3, columnspan=2)
 
 buttonp = but('=', prod)
 buttonp.grid(column=3, row=4)
 
-buttonc = but('C', limpar)
-buttonc.grid(column=2, row=4)
+buttonc = Button(janela, text='C', command=limpar, width=17, borderwidth=4, bg='#00CED1', font=('Verdana', 15), justify=CENTER)
+buttonc.grid(column=0, row=4, columnspan=3)
 
 buttonvirg = but('.', nvirg)
 buttonvirg.grid(column=2, row=3)
